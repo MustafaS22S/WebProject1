@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>TeckGO</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/Servo Pan Title Bracket Kit Aluminum.webp" alt="Servo Pan Title Bracket Kit Aluminum" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Servo Pan Title Bracket Kit Aluminum
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="www.facebook.com" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="www.twitter.com" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="www.instagram.com" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            wlcome
+            to <b>TechGo</b> store
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">EGP</option>
+            <option value="eur">none</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Egyption</option>
+            <option value="fr">soon</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="3About by huss/about.html" class="header-logo">
+          <img src="assets/images/logo/favicon.jpg" alt="Techgo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <a href="index.php" class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="index.php" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#category" class="menu-title">Categories</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="3About by huss\about.html" class="menu-title">about us</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="4Contact by r&mar/contact.html" class="menu-title">contact us</a>
+
+          </li>
+
+          <li class="menu-category">
+            <a href="index.php" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#product-featured" class="menu-title">Hot Offers</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">TeckGO</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="index.php" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">CATEGORIES</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="2Sections by n&t/index.html" class="submenu-title">SMD Components</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="2Sections by n&t/index2.html" class="submenu-title">Microcontrollers</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="2Sections by n&t/index3.html" class="submenu-title">Electronic tools</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="2Sections by n&t/index4.html" class="submenu-title">Power supplys</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="3About by huss/about.html" class="menu-title">ABOUT US</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="4Contact by r&mar/contact.css" class="menu-title">CONTACT US</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="index.php" class="menu-title">Blog</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">none</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">soon</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EG</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">SOON</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="www.facebook.com" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="www.twitter.com" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="www.instagram.com" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+ <!-- slider start -->
+ <div class="container">
+  <div class="img-slider">
+   
+    <div class="slide active">
+      <img src="./assets/images/slider/4.jpg" alt="Arduino UNO">
+      <div class="info">
+        <h2>Arduino UNO big Sale</h2>
+        <p>15% sale encouraging you to bring your interactive electronic projects to life with ease.</p>
+        <button class="slide-button" onclick="location.href='./5Items by mus/section 2/Arduino Uno R3.html'">View More</button>
+      </div>
+    </div>
+
+   
+    <div class="slide">
+      <img src="./assets/images/slider/10.jpg" alt="Project">
+      <div class="info">
+        <h2>Build your project with us</h2>
+        <p>Everything you need for your project is available with us.</p>
+        <button class="slide-button" onclick="location.href='./2Sections by n&t/index.html'">View More</button>
+      </div>
+    </div>
+
+    
+    <div class="slide">
+      <img src="./assets/images/slider/9.jpg" alt="ESP8266 Sale">
+      <div class="info">
+        <h2>ESP8266 big sale</h2>
+        <p>Don't miss 15% sale on powerful and affordable Wi-Fi-enabled microcontrollers.</p>
+        <button class="slide-button" onclick="location.href='./5Items by mus/section 2/Arduino Pro Mini.html'">View More</button>
+      </div>
+    </div>
+
+   
+    <div class="slide">
+      <img src="./assets/images/slider/11.jpg" alt="High-Quality PCB">
+      <div class="info">
+        <h2>High quality PCB</h2>
+        <p>Build your PCB board with high quality at unbeatable prices.</p>
+        <button class="slide-button" onclick="location.href='./5Items by mus/section 2/Arduino Uno R3.html'">View More</button>
+      </div>
+    </div>
+
+    
+    <div class="slide">
+      <img src="./assets/images/slider/12.jpg" alt="SMD Components">
+      <div class="info">
+        <h2>SMD High-Quality Brands</h2>
+        <p>Buy SMD components with high quality and top brands.</p>
+        <button class="slide-button" onclick="location.href='./5Items by mus/section 2/Arduino Uno R3.html'">View More</button>
+      </div>
+    </div>
+
+   
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+</div>
+
+<script>let currentSlide = 0; 
+  const slides = document.querySelectorAll('.slide'); 
+  const btns = document.querySelectorAll('.btn'); 
+  
+ 
+  function changeSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active'); 
+      btns[i].classList.remove('active'); 
+    });
+  
+    slides[index].classList.add('active');
+    btns[index].classList.add('active'); 
+  }
+  
+  
+  btns.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+      currentSlide = i; 
+      changeSlide(currentSlide); 
+    });
+  });
+  
+  
+  function autoChangeSlide() {
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      changeSlide(currentSlide);
+    }, 8000); 
+  }
+  
+  autoChangeSlide();    
+</script>    
+<!-- slider end -->
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category"id="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/electronics.svg" alt="electronics" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">SMD Components</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="./2Sections by n&t/index1.html" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/electronics.svg" alt="electronics" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Microcontrollers</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="./2Sections by n&t/index2.html" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/electronics.svg" alt="electronics" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Electronic tools</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="./2Sections by n&t/index3.html" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/electronics.svg" alt="electronics" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Power supplys</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="./2Sections by n&t/index4.html" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/electronics.svg" alt="SMD Components" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">SMD Components</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/electronics.svg" alt="SMD Components" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Microcontrollers</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li> <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/electronics.svg" alt="SMD Components" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Electronic tools</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li> <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/electronics.svg" alt="SMD Components" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Power supplys</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">arduino</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+            </ul>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/Rp-c7.6-st Thin Film Pressure Sensor.jpeg" alt="Rp-c7.6-st Thin Film Pressure Sensor" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Rp-c7.6-st Thin Film Pressure Sensor</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>5.00eg</del>
+                      <p class="price">4.00eg</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/Rp-c7.6-st Thin Film Pressure Sensor.jpeg" alt="Rp-c7.6-st Thin Film Pressure Sensor" width="75" height="75"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Rp-c7.6-st Thin Film Pressure Sensor</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>17.00eg</del>
+                      <p class="price">$7.00eg</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/Rp-c7.6-st Thin Film Pressure Sensor.jpeg" alt="Rp-c7.6-st Thin Film Pressure Sensor" width="75" height="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Rp-c7.6-st Thin Film Pressure Sensor</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>5.00eg</del>
+                      <p class="price">$3.00eg</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Delay Real-time.jpg" alt="Delay Real-time.jpg" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Delay Real-time</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">sensors</a>
+
+                      <div class="price-box">
+                        <p class="price">45.00eg</p>
+                        <del>65.00eg</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Delay Real-time.jpg" alt="Delay Real-time.jpg" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Delay Real-time</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">sensors</a>
+
+                      <div class="price-box">
+                        <p class="price">45.00eg</p>
+                        <del>65.00eg</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Delay Real-time.jpg" alt="Delay Real-time.jpg" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Delay Real-time</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">sensors</a>
+
+                      <div class="price-box">
+                        <p class="price">45.00eg</p>
+                        <del>65.00eg</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Trending</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Delay Real-time.jpg" alt="Delay Real-time.jpg" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Delay Real-time</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">sensors</a>
+
+                      <div class="price-box">
+                        <p class="price">45.00eg</p>
+                        <del>65.00eg</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Delay Real-time.jpg" alt="Delay Real-time.jpg" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Delay Real-time</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">sensors</a>
+
+                      <div class="price-box">
+                        <p class="price">45.00eg</p>
+                        <del>65.00eg</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                    <div class="showcase">
+
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/Delay Real-time.jpg" alt="Delay Real-time.jpg" width="70" class="showcase-img">
+                      </a>
+  
+                      <div class="showcase-content">
+  
+                        <a href="#">
+                          <h4 class="showcase-title">Delay Real-time</h4>
+                        </a>
+  
+                        <a href="#" class="showcase-category">sensors</a>
+  
+                        <div class="price-box">
+                          <p class="price">45.00eg</p>
+                          <del>65.00eg</del>
+                        </div>
+  
+                      </div>
+  
+                    </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Top Rated</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Delay Real-time.jpg" alt="Delay Real-time.jpg" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Delay Real-time</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">sensors</a>
+
+                      <div class="price-box">
+                        <p class="price">45.00eg</p>
+                        <del>65.00eg</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Delay Real-time.jpg" alt="Delay Real-time.jpg" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Delay Real-time</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">sensors</a>
+
+                      <div class="price-box">
+                        <p class="price">45.00eg</p>
+                        <del>65.00eg</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Delay Real-time.jpg" alt="Delay Real-time.jpg" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Delay Real-time</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">sensors</a>
+
+                      <div class="price-box">
+                        <p class="price">45.00eg</p>
+                        <del>65.00eg</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured"id="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/images/slider/4.jpg" alt="Arduino UNO" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Arduino UNO</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Arduino UNO 25% sale today
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">500.00eg</p>
+
+                      <del>650.00eg</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">0</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/images/slider/11.jpg" alt="PCB" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">PCB</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                       The Raspberry Pi Pico is a low-cost, high-performance
+                       microcontroller board based on the dual-core ARM Cortex-M0+ RP2040
+                       chip.
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">860.00eg</p>
+                      <del>900.00eg</del>
+                    </div>
+              
+                    <button class="add-cart-btn">add to cart</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+              
+                        <p> available: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">New Products</h2>
+  
+            <div class="product-grid">
+  
+
+
+
+
+
+              <div class="showcase">
+  
+                <div class="showcase-banner">
+  
+                  <img src="./5Items by mus/section 2/img/Arduino UNO Rev3 - Clone.jpg" alt="5 PCS Push button switch E" class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="5 PCS Push button switch E" width="300" class="product-img hover">
+  
+                  <p class="showcase-badge">15%</p>
+  
+                  <div class="showcase-actions">
+  
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+  
+                  </div>
+  
+                </div>
+  
+                <div class="showcase-content">
+  
+                  <a href="2Sections by n&t/index3.html" class="showcase-category">tools</a>
+  
+                  <a href="./5Items by mus/section 2/Arduino Uno R3.html">
+                    <h3 class="showcase-title">Arduino Uno R3</h3>
+                  </a>
+  
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+  
+                  <div class="price-box">
+                    <p class="price">500.00eg</p>
+                    <del>550.00eg</del>
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./5Items by mus/section 2/img/Joystick Shield for Arduino.jpg" alt="DC 48V Step down to 12V 30A 360W Waterproof DC" class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="DC 48V Step down to 12V 30A 360W Waterproof DC" class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="2Sections by n&t/index4.html" class="showcase-category">powersupply</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 2/Joystick Shield for Arduino.html" class="showcase-title">Joystick Shield for Arduino</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">45.00eg</p>
+                    <del>56.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./5Items by mus/section 2/img/Mini Breadboard 400 PIN.jpg" alt="Delay Real-time" class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="Delay Real-time" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="2Sections by n&t/index.html" class="showcase-category">module</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 2/Mini Breadboard 400 PIN.html" class="showcase-title">Mini Breadboard 400 PIN</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">300.00eg</p>
+                    <del>360.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Gas Sensor.webp" alt="Gas Sensor" class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="Gas Sensor" class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle blue">new</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="./2Sections by n&t/index.html" class="showcase-category">sensores</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 1/Gas Sensor.html" class="showcase-title">Gas Sensor <br> MQ5</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">25.00eg</p>
+                    <del>35.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="5Items by mus/section 2/img/Raspberry Pi Pico RP2020.webp" alt="JKM NEMA17 Hybride stepper Motor 2 Phase" class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="JKM NEMA17 Hybride stepper Motor 2 Phase" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="2Sections by n&t/index.html" class="showcase-category">motors</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 2/Raspberry Pi Pico RP2020.html" class="showcase-title">Raspberry Pi Pico RP2020</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">860.00eg</p>
+                    <del>900.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./5Items by mus/section 3/img/OnOff Rocker Switch.webp" alt="li-polli-ionli-feni-cdni-mh-charger" class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="li-polli-ionli-feni-cdni-mh-charger" class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle blue">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+              
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="2Sections by n&t/index.html" class="showcase-category">sensors</a>
+              
+                  <h3>
+                    <a href="5Items by mus/section 3/OnOff Rocker Switch.html" class="showcase-title">OnOff Rocker Switch</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">50.00eg</p>
+                    <del>$100.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+
+
+
+
+  
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./5Items by mus/section 2/img/Arduino Pro Mini.jpg" alt="MD0498  DC DC Boost Converter " class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="MD0498  DC DC Boost Converter " class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="./2Sections by n&t/index2.html" class="showcase-category">Microcontrollers & Boards</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 2/Arduino Pro Mini.html" class="showcase-title">Arduino Pro Mini</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">420.00eg</p>
+                    <del>500.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./5Items by mus/section 1/img/KY-015 DHT 11 Temperature Sensor.webp" alt="Microprocessor" class="product-img default" width="300">
+                  <img src=".2Sections by n&t/logo.png" alt="Microprocessor" class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="./2Sections by n&t/index.html" class="showcase-category">processor</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 1/KY-015 DHT 11 Temperature Sensor .html" class="showcase-title">KY-015 DHT 11 Temperature Sensor</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">150.00eg</p>
+                    <del>300.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./5Items by mus/section 1/img/Gas Sensor.webp" alt="Rp-c7.6-st Thin Film Pressure Sensor" class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="Rp-c7.6-st Thin Film Pressure Sensor" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="./2Sections by n&t/index.html" class="showcase-category">Sensor</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 1/Gas Sensor.html" class="showcase-title">Gas Sensor</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">32.00eg</p>
+                    <del>45.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="5Items by mus/section 1/img/Force sensitive Resistor Sensor.webp" alt="Servo Pan Title Bracket Kit Aluminum" class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="Servo Pan Title Bracket Kit Aluminum" class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="./2Sections by n&t/index.html" class="showcase-category">motor</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 1/Force sensitive Resistor Sensor.html" class="showcase-title">orce sensitive Resistor Sensor</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">710.00eg</p>
+                    <del>800.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./5Items by mus/section 1/img/Electret Microphone Amplifier.jpeg" alt="SOLAR PANEL 18V 30V" class="product-img default" width="300">
+                  <img src="./2Sections by n&t/logo.png" alt="SOLAR PANEL 18V 30V" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="./2Sections by n&t/index.html" class="showcase-category">SMD</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 1/Electrec Microphone Amplifier.html" class="showcase-title">Electrec Microphone Amplifier <br> 30V</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">50.00eg</p>
+                    <del>65.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+ 
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Ultrasonic Distance Sensor with Python and the micro.jpg" alt="Ultrasonic Distance Sensor with Python and the micro" class="product-img default" width="300">
+                  <img src="./assets/images/products/Ultrasonic Distance Sensor with Python and the micro-1.jpeg" alt="Ultrasonic Distance Sensor with Python and the micro" class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                    </button>
+  
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+            
+                <div class="showcase-content">
+                  <a href="./2Sections by n&t/index.html" class="showcase-category">sensor</a>
+              
+                  <h3>
+                    <a href="./5Items by mus/section 1/Ultrasonic Distance Sensor.html" class="showcase-title">Ultrasonic Distance Sensor</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                    <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">600.00eg</p>
+                    <del>850.00eg</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+            </div>
+  
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/mh.png" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Muhammad Hamdy</p>
+
+              <p class="testimonial-title">CEO & Founder MH(😂ومالو نعديها)</p>
+
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                😂محمد :اللي انتو عملتوا ف شهر انا عملتوا ف اربع اسابيع.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/cta-banner.jpg" alt="student collection" class="cta-banner">
+
+            <a href="indix.php" class="cta-content">
+
+              <p class="discount">25% Discount</p>
+
+              <h2 class="cta-title">Student collection</h2>
+
+              <p class="cta-text">Starting @ 10eg</p>
+
+              <button class="cta-btn">Shop now</button>
+
+            </a>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Worldwide Delivery</h3>
+                  <p class="service-desc">For Order Over $100</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">EG Orders Only</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Best Online Support</h3>
+                  <p class="service-desc">Hours: 8AM - 11PM</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Return Policy</h3>
+                  <p class="service-desc">Easy & Free Return</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">30% money back</h3>
+                  <p class="service-desc">For Order Over $100</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="./5Items by mus/section 3/GSM-GPRS Arduino SIM900.html">
+              <img src="./5Items by mus/section 3/img/GSM-GPRS Arduino SIM900.webp" alt="lorem2" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">module</a>
+
+              <a href="#">
+                <h3 class="blog-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Admin</cite> / <time datetime="2022-04-26">Apr 26, 2025</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="./5Items by mus/section 3/OnOff Rocker Switch.html">
+              <img src="./5Items by mus/section 3/img/OnOff Rocker Switch.webp" alt="lorem2" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">module</a>
+
+              <a href="#">
+                <h3 class="blog-title">OnOff Rocker Switch.</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Admin</cite> / <time datetime="2025-04-26">Apr 26, 2025</time>
+              </p>
+
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="./5Items by mus/section 3/RF Kit 433 Mhz Wireless.html">
+              <img src="./5Items by mus/section 3/img/RF Kit 433 Mhz Wireless.webp" alt="lorem2" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">module</a>
+
+              <a href="#">
+                <h3 class="blog-title">RF Kit 433 Mhz Wireless.</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Admin</cite> / <time datetime="2025-04-26">Apr 26, 2025</time>
+              </p>
+
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="./5Items by mus/section 3/2.4GHz Transceiver nRF 24L01 Wireless.webp.html">
+              <img src="./5Items by mus/section 3/img/2.4GHz Transceiver nRF 24L01 Wireless.webp" alt="lorem2" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">module</a>
+
+              <a href="./5Items by mus/section 3/2.4GHz Transceiver nRF 24L01 Wireless.webp.html">
+                <h3 class="blog-title"> A high-precision, high-performance stepper motor.</a>
+
+              <p class="blog-meta">
+                By <cite>Mr Admin</cite> / <time datetime="2025-04-26">Apr 26, 2025</time>
+              </p>
+
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+   <!-- Footer -->
+   <footer class="footer-pro">
+    <div class="footer-content">
+      <div class="footer-col-block footer-logo">
+        <h2>Electronics Store</h2>
+        <p>Innovation at your fingertips. Powering your DIY journey with top-grade components and tools.</p>
+        <div class="social-icons">
+          <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col-block footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="./2Sections by n&t/index.html">Arduino Kits</a></li>
+          <li><a href="./2Sections by n&t/index2.html">Sensors</a></li>
+          <li><a href="./2Sections by n&t/index3.html">Smart Home</a></li>
+          <li><a href="./2Sections by n&t/index4.html">Tools & Gear</a></li>
+        2</ul>
+      </div>
+
+      <div class="footer-col-block footer-links">
+        <h4>Customer</h4>
+        <ul>
+          <li><a href="./login/login.html">Account</a></li>
+          <li><a href="./2Sections by n&t/index.php">home</a></li>
+          <li><a href="./4Contact by r&mar/contact.html">contact</a></li>
+          <li><a href="./3About by huss/about.html">about</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-block footer-contact">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Borg El Arab, Egypt</li>
+          <li><i class="fas fa-envelope"></i> support@electronshop.com</li>
+          <li><i class="fas fa-phone"></i> +20 1207813367</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Electronics Store — Made with ❤️ for innovators.</p>
+    </div>
+  </footer>
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Team Store</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="fav icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h2 class="logo">TechGo Store</h2>
+        <nav class="nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <h2>Registeration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>confirm Password</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the conditions & terms</label>
+                    </div>
+                    <button type="submit" class="btn">Register </button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+        const loginLink = document.querySelector('.login-link');
+        const registerLink = document.querySelector('.register-link');
+
+        registerLink.addEventListener('click',  ()=> {
+            wrapper.classList.add('active');
+        });
+
+        loginLink.addEventListener('click',  ()=> {
+            wrapper.classList.remove('active');
+        });
+        
+    </script>
+    <script>const nav = document.querySelector(".nav"),
+        searchIcon = document.querySelector("#searchIcon"),
+        navOpenBtn = document.querySelector(".navOpenBtn"),
+        navCloseBtn = document.querySelector(".navCloseBtn");
+      
+      searchIcon.addEventListener("click", () => {
+        nav.classList.toggle("openSearch");
+        nav.classList.remove("openNav");
+        if (nav.classList.contains("openSearch")) {
+          return searchIcon.classList.replace("uil-search", "uil-times");
+        }
+        searchIcon.classList.replace("uil-times", "uil-search");
+      });
+      
+      navOpenBtn.addEventListener("click", () => {
+        nav.classList.add("openNav");
+        nav.classList.remove("openSearch");
+        searchIcon.classList.replace("uil-times", "uil-search");
+      });
+      navCloseBtn.addEventListener("click", () => {
+        nav.classList.remove("openNav");
+      });
+      </script>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
