@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body class="">
+
+
+  <div class="overlay" data-overlay=""></div>
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/" class="social-link">
+              <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/" class="social-link">
+              <ion-icon name="close" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/" class="social-link">
+              <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/" class="social-link">
+              <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            wlcome
+            to <b>TechGo</b> store
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">EGP</option>
+            <option value="eur">none</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">none</option>
+            <option value="fr">soon</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="../../assets/images/logo/favicon.jpg" alt="Techgo" width="120" height="36">
+        </a>
+
+        <form action="./search/search.php" method="GET" class="header-search-container">
+          <input type="search" name="query" class="search-field" placeholder="Enter your product name...">
+        <button type="submit" class="search-btn">
+         <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon>
+        </button>
+       </form>
+
+        <div class="header-user-actions">
+          <a href="../../login/login.php" class="action-btn" aria-label="User Account">
+            <ion-icon name="person-outline" role="img" class="md hydrated" aria-label="person outline"></ion-icon>
+          </a>
+          <button class="action-btn" data-wishlist-open-btn="" aria-label="Open Wishlist">
+            <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+            <span class="count" data-wishlist-count="">0</span>
+          </button>
+          <button class="action-btn" data-cart-open-btn="" aria-label="Open Shopping Cart">
+            <ion-icon name="bag-handle-outline" role="img" class="md hydrated" aria-label="bag handle outline"></ion-icon>
+            <span class="count" data-cart-count="">0</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="../../index.php" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="../../pages/2Sections by n&t/index.html">Featured Sensors</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 1/Electrec Microphone Amplifier.html">Electrec Microphone</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 1/Force sensitive Resistor Sensor.html">Force sensitive Resistor</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 1/Gas Sensor.html">Gas Sensor</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 1/KY-015 DHT 11 Temperature Sensor .html">KY-015 DHT 11 Temperature</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 1/Ultrasonic Distance Sensor.html">Ultrasonic Distance Sensor</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="../../pages/2Sections by n&t/index2.html">Microcontrollers</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 2/Arduino Pro Mini.html">Arduino Pro Mini</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 2/Arduino Uno R3.html">Arduino Uno R3</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 2/Joystick Shield for Arduino.html">Joystick Shield</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 2/Mini Breadboard 400 PIN.html">Mini Breadboard 400 PIN</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 2/Raspberry Pi Pico RP2020.html">Raspberry Pi Pico</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="../../pages/2Sections by n&t/index3.html">Electronic Tools</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 3/2.4GHz Transceiver nRF 24L01 Wireless.webp.html">Emergency Stop Switch</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 3/Emergency Stop Switch.html">Emergency Stop Switch</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 3/GSM-GPRS Arduino SIM900.html">GSM-GPRS Arduino</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 3/OnOff Rocker Switch.html">OnOff Rocker Switch</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 3/RF Kit 433 Mhz Wireless.html">RF Kit 433 Mhz Wireless</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="../../pages/2Sections by n&t/index4.html">Power Supply</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 4/Arduino Li-ion Battery Charging.html">Arduino Li-ion Charging</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 4/DC to DC Converter 48V→12V 30A Waterproof.html">DC to DC Converter</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 4/TP5100 Lithium Battery Charger.html">TP5100 Lithium Charger</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 4/Triple Channel 18650 Charger 3.7v 3A.html">Triple Channel Charger</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="../../pages/5Items by mus/section 4/Ultracell Lead Acid Battery 12V 26A.html">Ultracell Lead Acid Battery</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="../../pages/3About by huss/about.html" class="menu-title">about us</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="../../pages/4Contact by r&mar/contact.html" class="menu-title">contact us</a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    
+
+  </header>
+
+  <div class="mobile-bottom-navigation">
+    <button class="action-btn" data-mobile-menu-open-btn="" aria-label="Open Menu"> <ion-icon name="menu-outline" role="img" class="md hydrated" aria-label="menu outline"></ion-icon>
+    </button>
+    <button class="action-btn" data-cart-open-btn="" aria-label="Open Shopping Cart"> <ion-icon name="bag-handle-outline" role="img" class="md hydrated" aria-label="bag handle outline"></ion-icon>
+      <span class="count" data-cart-count="">0</span>
+    </button>
+    <button class="action-btn" aria-label="Home"> <ion-icon name="home-outline" role="img" class="md hydrated" aria-label="home outline"></ion-icon>
+    </button>
+    <button class="action-btn" data-wishlist-open-btn="" aria-label="Open Wishlist"> <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+      <span class="count" data-wishlist-count="">0</span>
+    </button>
+  </div>
+
+
+  <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu="">
+    <div class="menu-top">
+      <h2 class="menu-title">Menu</h2>
+      <button class="menu-close-btn" data-mobile-menu-close-btn="" aria-label="Close Menu">
+        <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+      </button>
+    </div>
+    <ul class="mobile-menu-category-list">
+      <li class="menu-category"><a href="#" class="menu-title">Home</a></li>
+      <li class="menu-category">
+        <button class="accordion-menu" data-accordion-btn="">
+          <p class="menu-title">Categories</p>
+          <div>
+            <ion-icon name="add-outline" class="add-icon md hydrated" role="img" aria-label="add outline"></ion-icon>
+            <ion-icon name="remove-outline" class="remove-icon md hydrated" role="img" aria-label="remove outline"></ion-icon>
+          </div>
+        </button>
+        <ul class="submenu-category-list" data-accordion="">
+          <li class="submenu-category"><a href="../../pages/2Sections by n&t/index.html" class="submenu-title">Featured Sensors & Robotics</a></li>
+          <li class="submenu-category"><a href="../../pages/2Sections by n&t/index2.html" class="submenu-title">Microcontrollers</a></li>
+          <li class="submenu-category"><a href="../../pages/2Sections by n&t/index3.html" class="submenu-title">Electronic tools</a></li>
+          <li class="submenu-category"><a href="../../pages/2Sections by n&t/index4.html" class="submenu-title">Power supplies</a></li>
+
+        </ul>
+      </li>
+      <li class="menu-category"><a href="../../pages/3About by huss/about.html" class="menu-title">About Us</a></li>
+      <li class="menu-category"><a href="../../pages/4Contact by r&mar/contact.html" class="menu-title">Contact Us</a></li>
+    </ul>
+    <div class="menu-bottom">
+      <ul class="menu-category-list">
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn="">
+            <p class="menu-title">Language</p>
+            <ion-icon name="caret-back-outline" class="caret-back md hydrated" role="img" aria-label="caret back outline"></ion-icon>
+          </button>
+          <ul class="submenu-category-list" data-accordion="">
+            <li class="submenu-category"><a href="#" class="submenu-title">English</a></li>
+            <li class="submenu-category"><a href="#" class="submenu-title">العربية (soon)</a></li>
+          </ul>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn="">
+            <p class="menu-title">Currency</p>
+            <ion-icon name="caret-back-outline" class="caret-back md hydrated" role="img" aria-label="caret back outline"></ion-icon>
+          </button>
+          <ul class="submenu-category-list" data-accordion="">
+            <li class="submenu-category"><a href="#" class="submenu-title">EGP</a></li>
+            <li class="submenu-category"><a href="#" class="submenu-title">soon</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu-social-container">
+        <li><a href="https://www.facebook.com/" class="social-link" aria-label="Facebook"><ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon></a></li>
+        <li><a href="https://x.com/" class="social-link" aria-label="Twitter"><ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/" class="social-link" aria-label="Instagram"><ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/" class="social-link" aria-label="LinkedIn"><ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <nav class="sidebar-menu wishlist-menu has-scrollbar" data-wishlist-menu="">
+    <div class="menu-top">
+      <h2 class="menu-title">Wishlist</h2>
+      <button class="menu-close-btn" data-wishlist-close-btn="" aria-label="Close Wishlist">
+        <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+      </button>
+    </div>
+    <ul class="sidebar-menu-list">
+      <li class="sidebar-menu-item">
+        <div class="item-img">
+          <img src="../../assets/images/products/Gas%20Sensor.webp" alt="Gas Sensor" width="70" height="70" loading="lazy">
+        </div>
+        <div class="item-content">
+          <a href="#" class="item-title">Gas Sensor MQ5</a>
+          <p class="item-price">25.00 EGP</p>
+        </div>
+        <button class="item-remove-btn" aria-label="Remove from Wishlist">
+          <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+        </button>
+      </li>
+      <li class="sidebar-menu-item empty-message" style="display: none;">
+        <p>Your wishlist is currently empty.</p>
+      </li>
+    </ul>
+    <div class="menu-bottom">
+      <a href="#" class="bttn bttn-primary bttn-block">View Full Wishlist</a>
+    </div>
+  </nav>
+
+
+  <nav class="sidebar-menu cart-menu has-scrollbar" data-cart-menu="">
+    <div class="menu-top">
+      <h2 class="menu-title">Shopping Cart</h2>
+      <button class="menu-close-btn" data-cart-close-btn="" aria-label="Close Cart">
+        <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+      </button>
+    </div>
+    <ul class="sidebar-menu-list">
+      <li class="sidebar-menu-item">
+        <div class="item-img">
+          <img src="../../assets/images/products/Delay%20Real-time.jpg" alt="Delay Real-time Relay" width="70" height="70" loading="lazy">
+        </div>
+        <div class="item-content">
+          <a href="#" class="item-title">Delay Real-time Relay</a>
+          <div class="item-qty-price">
+            <span class="item-quantity">Qty: 1</span>
+            <p class="item-price">58.00 EGP</p>
+          </div>
+        </div>
+        <button class="item-remove-btn" aria-label="Remove from Cart">
+          <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+        </button>
+      </li>
+      <li class="sidebar-menu-item empty-message" style="display: none;">
+        <p>Your cart is currently empty.</p>
+      </li>
+    </ul>
+    <div class="menu-bottom">
+      <div class="subtotal">
+        <p>Subtotal:</p>
+        <p class="subtotal-price">58.00 EGP</p>
+      </div>
+      <a href="#" class="bttn bttn-primary bttn-block">Checkout</a>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+  <div class="category">
+
+    <div class="container">
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">Electronic tools</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./photos/537a0ae4-f831-45ce-b0ba-ef5eac7e0263.jpeg" alt="2.4GHz Transceiver nRF24L01" class="product-img default" width="300">
+                  <img src="./photos/537a0ae4-f831-45ce-b0ba-ef5eac7e0263.jpeg" alt="2.4GHz Transceiver nRF24L01" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+
+                    
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">tools</a>
+
+                  <a href="../5Items by mus/section 3/2.4GHz Transceiver nRF 24L01 Wireless.webp.html">
+                    <h3 class="showcase-title">2.4GHz Transceiver nRF24L01</h3>
+                  </a>
+
+                  <div class="price-box">
+                    <p class="price">80.00 EGP</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./photos/0b2ce9d3-b4e4-476e-8dd6-1912136e1a63.jpeg" alt="RF Kit 433 MHz Wireless" class="product-img default" width="300">
+                  <img src="./photos/0b2ce9d3-b4e4-476e-8dd6-1912136e1a63.jpeg" alt="RF Kit 433 MHz Wireless" class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+
+                    
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">tool</a>
+
+                  <h3>
+                    <a href="../5Items by mus/section 3/RF Kit 433 Mhz Wireless.html" class="showcase-title">RF Kit 433 MHz Wireless</a>
+                  </h3>
+
+
+                  <div class="price-box">
+                    <p class="price">100.00eg</p>
+                    <del>120.00eg</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./photos/36ae0eac-be3f-4888-a2be-aa418468ea0a.jpeg" alt="GSM-GPRS Arduino SIM900" class="product-img default" width="300">
+                  <img src="./photos/36ae0eac-be3f-4888-a2be-aa418468ea0a.jpeg" alt="GSM-GPRS Arduino SIM900" class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+
+                    
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">tool</a>
+
+                  <h3>
+                    <a href="../5Items by mus/section 3/GSM-GPRS Arduino SIM900.html" class="showcase-title">GSM-GPRS Arduino SIM900</a>
+                  </h3>
+
+                  <div class="price-box">
+                    <p class="price">900.00eg</p>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./photos/0f4fe166-b4e2-4695-9ccf-e809473275b2.jpeg" alt="Emergency Stop Switch" class="product-img default" width="300">
+                  <img src="./photos/0f4fe166-b4e2-4695-9ccf-e809473275b2.jpeg" alt="Emergency Stop Switch" class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+
+                    
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">tool</a>
+
+                  <h3>
+                    <a href="../5Items by mus/section 3/OnOff Rocker Switch.html" class="showcase-title">Emergency Stop Switch</a>
+                  </h3>
+
+                  <div class="price-box">
+                    <p class="price">600.00eg</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./photos/0a188dbc-01e3-499c-aa5b-09b9ab826af3.jpeg" alt="On/Off Rocker Switch" class="product-img default" width="300">
+                  <img src="./photos/0a188dbc-01e3-499c-aa5b-09b9ab826af3.jpeg" alt="On/Off Rocker Switch" class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle blue">new</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                    </button>
+
+                    
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline" role="img" class="md hydrated" aria-label="bag add outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">tool</a>
+
+                  <h3>
+                    <a href="../5Items by mus/section 3/Emergency Stop Switch.html" class="showcase-title">On/Off Rocker Switch</a>
+                  </h3>
+                  
+                  <div class="price-box">
+                    <p class="price">50.00eg</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section logo-section">
+        <h1><b>TechGo</b></h1>
+        <p>Your source for electronics components and tools.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-section pages-section">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="../../index.php">Home</a></li>
+          <li><a href="../../pages/4Contact by r&mar/contact.html">Contact</a></li>
+          <li><a href="../../pages/3About by huss/about.html">About</a></li>
+          <li><a href="../../login/login.php">Login/Register</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-phone"></i> Hotline: <a href="tel:+201207813367">+201207813367</a></p>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@techgo.com">info@techgo.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/201207813367" target="_blank">+201207813367</a></p>
+      </div>
+      <div class="footer-section location-section">
+        <h3>Location</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 158 Elhourya St, Elbrahimya, Alexandria, Egypt</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.481506810454!2d29.9305363151434!3d31.20732198147567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e5b9d6f6ff%3A0x8a8c7d1b9e4f5d2a!2s158%20El%20Horreya%20Rd%2C%20Bab%20Sharqi%20WA%20 Wabour%20Al%20Meyah%2C%20Alexandria%20Governorate%205422031%2C%20Egypt!5e0!3m2!1sen!2seg!4v1678886011123!5m2!1sen!2seg" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Shop Location Map"></iframe>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright Reserved © TechGo 2025</p>
+      <img src="../../assets/images/payment.png" alt="Payment methods" class="payment-img" loading="lazy">
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!--
+    - custom js link
+  -->
+  <script src="../../assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>
